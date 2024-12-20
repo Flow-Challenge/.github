@@ -1,7 +1,7 @@
 # EOY Flow Challenge
 Join the challenge to maximize your use of Flow! 
 
-# How to commit and push (create your personal access token)
+## How to commit and push (create your personal access token)
 
 1) Go to the user settings
 ![image](https://github.com/user-attachments/assets/65159a92-6ed8-4920-acbf-e49cf471ddbc)

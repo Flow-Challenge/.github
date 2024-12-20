@@ -1,6 +1,9 @@
 
 # SNIPPET MANAGER TOOL
 
+![image](https://github.com/user-attachments/assets/c0e9c384-e6fd-43b0-94cb-4e31c692d391)
+
+
 ## Overview 
 The SNIPPET MANAGER TOOL is a powerful code snippet management application designed for developers. This tool enables users to create, modify, and delete code snippets easily. With integrated features powered by FLOW AI, users can generate new snippets using GenAI, automatically create tags for better organization, and manage their code snippets efficiently.
 

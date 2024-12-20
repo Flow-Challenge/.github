@@ -46,60 +46,12 @@ This technology stack may differ from what participants are accustomed to, provi
    - Prizes will be awarded to the top-performing teams based on the evaluation criteria.
 
 
-## [1] PROJECT INITIALIZER TOOL
 
-Overview
-The PROJECT INITIALIZER TOOL is an innovative tool designed to streamline and accelerate the software project creation process. Similar to the popular Spring Initializer, this tool allows developers to choose the programming language, build mechanism, framework, and dependency libraries. With the help of FLOW AI, the tool generates a script compatible with Linux or Windows, setting up the entire project structure quickly and efficiently.
-
-### Key Features
-- Language Selection: Choose from popular programming languages such as Java, JavaScript, Python, Ruby, and more.
-- Build Mechanisms: Support for multiple build tools, including npm, yarn, gradle, maven, etc.
-- Popular Frameworks: Options to select widely-used frameworks like Spring, React, Next.js, Node.js, Django, etc.
-- Dependency Libraries: Select necessary dependency libraries to ensure a complete setup from the start.
-- Automated Script Generation: Generates an executable script for Linux or Windows to create the project structure automatically.
-- User-Friendly Interface: An intuitive interface guiding users through the project setup process.
-- Documentation and Examples: Comprehensive documentation and sample projects to assist users in utilizing the tool effectively.
+## Project specs:
+- [PROJECT INITIALIZER TOOL](https://github.com/Flow-Challenge/.github/blob/main/initializr-tool.md)
+- [SNIPPET MANAGER TOOL](https://github.com/Flow-Challenge/.github/blob/main/snippet-manager.md)
 
 
-## [2] SNIPPET MANAGER TOOL
-
-The SNIPPET MANAGER TOOL is a powerful code snippet management application designed for developers. This tool enables users to create, modify, and delete code snippets easily. With integrated features powered by FLOW AI, users can generate new snippets using GenAI, automatically create tags for better organization, and manage their code snippets efficiently.
-
-### Key Features
-- Snippet Creation: Users can create custom code snippets tailored to their specific needs and programming languages.
-- Edit and Delete Functionality: Easily modify existing snippets or remove them from the database when they are no longer needed.
-- GenAI Snippet Generation: Leverage FLOW AI’s GenAI capabilities to generate new code snippets automatically based on user input or requirements.
-- Automatic Tag Creation: Automatically generate relevant tags for each snippet using FLOW AI, enhancing organization and searchability.
-- User-Friendly Interface: An intuitive and easy-to-navigate interface allows developers to manage their snippets with ease.
-- Search and Filter: Quickly find specific snippets using search and filter options based on tags, languages, or content.
-
-
-
-
-
-
-
-
-## How to push changes (create your personal access token)
-
-1) Go to the user settings
-![image](https://github.com/user-attachments/assets/65159a92-6ed8-4920-acbf-e49cf471ddbc)
-
-2) Developers Settings > Personal access tokens > Tokens (classic)
-![image](https://github.com/user-attachments/assets/1e0775df-90f2-4248-8ed9-1c59124cc414)
-
-3) Generate new token > Generate new token (classic) > Copy the token 
-![image](https://github.com/user-attachments/assets/753f02b8-5088-4313-91af-292250ad8cdf)
-
-4) Clone the repo with your token like this
-```
-git clone https://<TOKEN>@github.com/Flow-Challenge/flow-centelha-initializr-api.git
-git clone https://<TOKEN>@github.com/Flow-Challenge/flow-centelha-snippet-api.git
-```
-
-4.1) If you already cloned the repo, just set the url
-```
-git remote set-url origin https://<TOKEN>@github.com/Flow-Challenge/flow-centelha-initializr-api.git
-git remote set-url origin https://<TOKEN>@github.com/Flow-Challenge/flow-centelha-snippet-api.git
-```
+## How to push changes 
+- Follow -> https://github.com/Flow-Challenge/.github/blob/main/howto-push-changes.md
 

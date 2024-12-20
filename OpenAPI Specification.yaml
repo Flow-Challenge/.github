@@ -1,0 +1,199 @@
+openapi: "3.0.0"
+info:
+  title: "Snippet Manager API"
+  description: "API for managing code snippets and configurations"
+  version: "1.0.0"
+paths:
+  /languages/{language}:
+    get:
+      summary: "Get language details"
+      parameters:
+        - name: "language"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "Language details"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  package_managers:
+                    type: "array"
+                    items:
+                      type: "string"
+                  frameworks:
+                    type: "array"
+                    items:
+                      type: "string"
+                  dependencies:
+                    type: "array"
+                    items:
+                      type: "string"
+              example:
+                package_managers: ["npm", "yarn", "pnpm"]
+                frameworks: ["Next.js", "Node.js"]
+                dependencies: ["Express", "Async", "Lodash", "React", "Axios"]
+        "404":
+          description: "Language not found"
+        "500":
+          description: "Server error"
+
+  /init-configs:
+    post:
+      summary: "Initialize configurations"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+              properties:
+                language:
+                  type: "string"
+                package_manager:
+                  type: "string"
+                framework:
+                  type: "string"
+                dependencies:
+                  type: "array"
+                  items:
+                    type: "string"
+            example:
+              language: "javascript"
+              package_manager: "npm"
+              framework: "Next.js"
+              dependencies: ["Express", "Async", "Lodash", "React", "Axios"]
+      responses:
+        "200":
+          description: "Binary response"
+          content:
+            application/octet-stream:
+              schema:
+                type: "string"
+                format: "binary"
+        "400":
+          description: "Bad request"
+        "500":
+          description: "Server error"
+
+  /snippets:
+    get:
+      summary: "Get all snippets"
+      responses:
+        "200":
+          description: "List of snippets"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  type: "object"
+                  properties:
+                    id:
+                      type: "integer"
+                    content:
+                      type: "string"
+                    tags:
+                      type: "array"
+                      items:
+                        type: "string"
+              example: 
+                - id: 1
+                  content: "this is a snippet"
+                  tags: ["python", "script", "azure-devops"]
+                - id: 2
+                  content: "this is another snippet"
+                  tags: ["kotlin", "controller", "authenticated"]
+        "404":
+          description: "Snippets not found"
+        "500":
+          description: "Server error"
+    
+    post:
+      summary: "Create a new snippet"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+              properties:
+                content:
+                  type: "string"
+                manual_tags:
+                  type: "array"
+                  items:
+                    type: "string"
+            example:
+              content: "this is a manual snippet"
+              manual_tags: ["python"]
+      responses:
+        "200":
+          description: "Snippet created"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  id:
+                    type: "integer"
+                  content:
+                    type: "string"
+                  tags:
+                    type: "array"
+                    items:
+                      type: "string"
+              example:
+                id: 3
+                content: "this is a manual snippet"
+                tags: ["python", "script"]
+        "400":
+          description: "Bad request"
+        "500":
+          description: "Server error"
+
+  /snippets/genai:
+    post:
+      summary: "Generate a snippet using GenAI"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+              properties:
+                stack_prompt:
+                  type: "string"
+                content_prompt:
+                  type: "string"
+            example:
+              stack_prompt: "Python with Flask using Postgres database"
+              content_prompt: "Write me a simple GET endpoint with URI /users/:id that fetches an user by their id in a database, treating non-existent IDs as HTTP 404"
+      responses:
+        "200":
+          description: "Generated snippet"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  id:
+                    type: "integer"
+                  content:
+                    type: "string"
+                  tags:
+                    type: "array"
+                    items:
+                      type: "string"
+              example:
+                id: 3
+                content: "this is a genai-generated snippet"
+                tags: ["python", "flask", "rest", "postgres"]
+        "400":
+          description: "Bad request"
+        "500":
+          description: "Server error"

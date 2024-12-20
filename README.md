@@ -24,25 +24,19 @@ This technology stack may differ from what participants are accustomed to, provi
 
 ## Challenge Rules
 
-1. **Team Registration**:
-   - Each group must register for one of the two projects: PROJECT INITIALIZER TOOL or SNIPPET MANAGER TOOL.
+1. **Development Process**:
+   - Teams must use Flow for coding and integrating their solutions.
 
-2. **Development Process**:
-   - Teams must use Flow for coding and integrating their solutions. This includes utilizing Flow's capabilities for generating code snippets and managing project structures.
-
-3. **Repository Management**:
+2. **Repository Management**:
    - Each project must maintain separate repositories for API and UI. Teams should follow best practices for version control and collaboration.
 
-4. **Documentation**:
-   - Teams are required to document their development process, including setup instructions, code explanations, and any challenges faced. This documentation should be included in each repository.
+3. **Submission**:
+   - Each team must submit their completed projects. All code should be pushed to the respective repositories, and a final demonstration should be prepared.
 
-5. **Submission**:
-   - Each team must submit their completed projects by the specified deadline. All code should be pushed to the respective repositories, and a final demonstration should be prepared.
-
-6. **Evaluation Criteria**:
+4. **Evaluation Criteria**:
    - Projects will be evaluated based on functionality, code quality, adherence to the rules, documentation, and creativity in utilizing Flow within the solutions.
 
-7. **Prizes**:
+5. **Prizes**:
    - Prizes will be awarded to the top-performing teams based on the evaluation criteria.
 
 

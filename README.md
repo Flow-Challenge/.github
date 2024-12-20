@@ -46,6 +46,10 @@ This technology stack may differ from what participants are accustomed to, provi
 - [SNIPPET MANAGER TOOL](https://github.com/Flow-Challenge/.github/blob/main/snippet-manager.md)
 
 
+## OpenAPI
+https://github.com/Flow-Challenge/.github/blob/main/OpenAPI%20Specification.yaml
+
+
 ## How to push changes 
 - Follow -> https://github.com/Flow-Challenge/.github/blob/main/howto-push-changes.md
 
